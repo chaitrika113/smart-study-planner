@@ -8,11 +8,10 @@ function Login() {
         email: "",
         password: ""
     });
-
-    const handleSubmit = async (e) => {
+    const handleSubmit=async (e)=>{
         e.preventDefault();
-        try {
-            const res = await axios.post("http://13.63.7.0 :5000/login", form);
+        try{
+            const res= await axios.post("http://13.63.7.0:5000/login",form);
             localStorage.setItem("token", res.data.token);
             alert("Login successful!");
             navigate("/dashboard");
@@ -20,7 +19,7 @@ function Login() {
             alert(err.response?.data?.message || "Login failed!");
         }
     };
-
+///
     return (
         <div className="min-h-screen bg-gray-100 flex items-center justify-center">
             <div className="bg-white p-8 rounded-xl shadow-md w-96">
