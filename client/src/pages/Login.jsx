@@ -12,7 +12,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/login", form);
+            const res = await axios.post("http://13.63.7.0 :5000/login", form);
             localStorage.setItem("token", res.data.token);
             alert("Login successful!");
             navigate("/dashboard");

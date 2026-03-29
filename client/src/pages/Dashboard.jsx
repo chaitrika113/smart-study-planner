@@ -13,7 +13,7 @@ function Dashboard() {
 
     const fetchTasks = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/tasks", {
+            const res = await axios.get("http://13.63.7.0 :5000/tasks", {
                 headers: { authorization: token }
             });
             setTasks(res.data);
@@ -25,7 +25,7 @@ function Dashboard() {
 
     const addTask = async () => {
         try {
-            await axios.post("http://localhost:5000/add-task", {
+            await axios.post("http://13.63.7.0 :5000/add-task", {
                 title: task,
                 completed: false
             }, {
@@ -39,7 +39,7 @@ function Dashboard() {
 
     const deleteTask = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/delete-task/${id}`, {
+            await axios.delete(`http://13.63.7.0 :5000/delete-task/${id}`, {
                 headers: { authorization: token }
             });
             fetchTasks();
@@ -50,7 +50,7 @@ function Dashboard() {
 
     const completeTask = async (id) => {
         try {
-            await axios.put(`http://localhost:5000/complete-task/${id}`, {}, {
+            await axios.put(`http://13.63.7.0 :5000/complete-task/${id}`, {}, {
                 headers: { authorization: token }
             });
             fetchTasks();
@@ -62,7 +62,7 @@ function Dashboard() {
     const generatePlan = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:5000/generate-plan",
+                "http://13.63.7.0 :5000/generate-plan",
                 { tasks },
                 { headers: { authorization: token } }
             );

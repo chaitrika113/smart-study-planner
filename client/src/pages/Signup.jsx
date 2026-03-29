@@ -14,7 +14,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/signup", form);
+            await axios.post("http://13.63.7.0:5000/signup", form);
             alert("Account created successfully!");
             navigate("/");
         } catch (err) {
