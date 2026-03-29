@@ -23,7 +23,7 @@ function Signup() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+        <div className="min-h-screen bg-gradient-to-br from-pink-500 to-orange-400 flex items-center justify-center">
             <div className="bg-white p-8 rounded-xl shadow-xl w-96">
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">📚 Study Planner</h1>
@@ -60,7 +60,7 @@ function Signup() {
                     </div>
 
                     <button
-                        className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-lg w-full font-semibold hover:opacity-90"
+                        className="bg-gradient-to-r from-pink-500 to-orange-600 text-white p-3 rounded-lg w-full font-semibold hover:opacity-90"
                         type="submit">
                         Create Account
                     </button>
